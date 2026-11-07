@@ -1,4 +1,8 @@
 spring:
+  data:
+    web:
+      pageable:
+        max-page-size: 100
   datasource:
     url: jdbc:postgresql://localhost:5432/shopcore
     username: shopcore
@@ -6,6 +10,8 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+      format_sql: true
+    show-sql: true
     open-in-view: false
   flyway:
     enabled: true
