@@ -1,3 +1,11 @@
 spring:
-  application:
-    name: shopcore
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shopcore
+    username: shopcore
+    password: shopcore
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
