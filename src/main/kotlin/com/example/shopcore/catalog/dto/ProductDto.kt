@@ -7,5 +7,6 @@ data class ProductDto(
     val name: String,
     var description: String?,
     var price: BigDecimal,
-    var stock: Int
+    var stock: Int,
+    val categoryId: Long
 )
