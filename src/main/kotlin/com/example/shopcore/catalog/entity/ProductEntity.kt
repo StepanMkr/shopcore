@@ -21,7 +21,10 @@ class ProductEntity(
     var price: BigDecimal,
 
     @Column(nullable = false)
-    var stock: Int
+    var stock: Int,
+
+    @Column(name = "category_id")
+    var categoryId: Long? = null,
 ) {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
